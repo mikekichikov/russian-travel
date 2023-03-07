@@ -1,0 +1,28 @@
+.photo-grid {
+  max-width: 1280px;
+  padding: 90px 48px 0;
+  display: grid;
+  gap: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1279px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1023px) {
+  .photo-grid {
+    padding: 90px 24px 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .photo-grid {
+    padding: 64px 16px 0;
+    grid-template-columns: 1fr;
+  }
+}

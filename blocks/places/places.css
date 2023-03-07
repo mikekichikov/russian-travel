@@ -1,0 +1,30 @@
+.places {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0;
+  padding: 90px 148px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@media (max-width: 1279px) {
+  .places {
+    padding: 90px 48px 0;
+  }
+}
+@media (max-width: 1023px) {
+  .places {
+    padding: 90px 24px 0;
+  }
+}
+@media (max-width: 767px) {
+  .places {
+    padding: 64px 0 0;
+    row-gap: 50px;
+  }
+}
